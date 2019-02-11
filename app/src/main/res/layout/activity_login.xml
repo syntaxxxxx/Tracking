@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hei"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context="com.syntax.trackingrealtime.activities.Login">
+
+
+    <EditText
+        android:id="@+id/edt_email_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Email"
+        android:textColorHint="#cccbcb" />
+
+    <EditText
+        android:id="@+id/edt_password_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:hint="Password"
+        android:textColorHint="#cccbcb" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/background2"
+        android:text="Sign In"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tv_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="right"
+        android:text="Have Account ? Sign up "
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>
