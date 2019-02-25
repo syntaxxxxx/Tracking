@@ -1,4 +1,4 @@
-package com.syntax.trackingrealtime;
+package com.fiqri.ganteng;
 
 import org.junit.Test;
 

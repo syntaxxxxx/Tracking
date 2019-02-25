@@ -1,4 +1,4 @@
-package com.syntax.trackingrealtime;
+package com.fiqri.ganteng;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

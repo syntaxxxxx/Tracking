@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">TrackingRealtime</string>
     <string name="title_activity_tracking">Map</string>
+    <string name="isEmptyField">Tidak Boleh Kosong</string>
+    <string name="allow">Please enable location services to allow GPS tracking</string>
 </resources>

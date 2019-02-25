@@ -6,7 +6,7 @@
     android:background="@drawable/hei"
     android:orientation="vertical"
     android:padding="40dp"
-    tools:context="com.syntax.trackingrealtime.activities.Login">
+    tools:context="com.fiqri.ganteng.activities.Login">
 
 
     <EditText

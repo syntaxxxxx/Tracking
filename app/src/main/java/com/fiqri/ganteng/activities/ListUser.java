@@ -1,15 +1,15 @@
-package com.syntax.trackingrealtime.activities;
+package com.fiqri.ganteng.activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.syntax.trackingrealtime.R;
+import com.fiqri.ganteng.R;
 
-public class Splash extends AppCompatActivity {
+public class ListUser extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
+        setContentView(R.layout.activity_list_user);
     }
 }
