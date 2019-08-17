@@ -1,4 +1,4 @@
-package com.fiqri.ganteng.activities;
+package com.fiqri.ganteng.activities.list;
 
 import android.Manifest;
 import android.content.Intent;
@@ -14,9 +14,9 @@ import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
 import com.fiqri.ganteng.R;
-import com.fiqri.ganteng.adapter.ListUserAdapter;
+import com.fiqri.ganteng.activities.list.adapter.ListUserAdapter;
 import com.fiqri.ganteng.model.User;
-import com.fiqri.ganteng.service.TrackingService;
+import com.fiqri.ganteng.activities.tracking.service.TrackingService;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -32,7 +32,7 @@ import butterknife.ButterKnife;
 
 import static butterknife.internal.Utils.arrayOf;
 
-public class ListUtamaUser extends AppCompatActivity {
+public class ListUser extends AppCompatActivity {
 
     private static final int REQUEST_PERMISSION = 100;
 
@@ -90,7 +90,7 @@ public class ListUtamaUser extends AppCompatActivity {
 //                    });
 
                     ListUserAdapter adapter = new ListUserAdapter(userList);
-                    recyclerview.setLayoutManager(new LinearLayoutManager(ListUtamaUser.this));
+                    recyclerview.setLayoutManager(new LinearLayoutManager(ListUser.this));
                     recyclerview.setHasFixedSize(true);
                     recyclerview.setAdapter(adapter);
                 }
@@ -98,7 +98,7 @@ public class ListUtamaUser extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(ListUtamaUser.this,
+                Toast.makeText(ListUser.this,
                         databaseError.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
@@ -138,6 +138,6 @@ public class ListUtamaUser extends AppCompatActivity {
     }
 
     public void startTrackerService() {
-        startService(new Intent(ListUtamaUser.this, TrackingService.class));
+        startService(new Intent(ListUser.this, TrackingService.class));
     }
 }

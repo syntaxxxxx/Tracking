@@ -1,4 +1,4 @@
-package com.fiqri.ganteng.service;
+package com.fiqri.ganteng.activities.tracking.service;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
@@ -12,7 +12,6 @@ import android.os.IBinder;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
-import com.fiqri.ganteng.model.Locations;
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;

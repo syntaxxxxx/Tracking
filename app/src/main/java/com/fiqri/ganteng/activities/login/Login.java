@@ -1,4 +1,4 @@
-package com.fiqri.ganteng.activities;
+package com.fiqri.ganteng.activities.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,11 +13,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fiqri.ganteng.R;
+import com.fiqri.ganteng.activities.list.ListUser;
+import com.fiqri.ganteng.activities.regis.Register;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -79,7 +80,7 @@ public class Login extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             Log.d("TAG", "signInWithEmail:success");
-                            startActivity(new Intent(Login.this, ListUtamaUser.class));
+                            startActivity(new Intent(Login.this, ListUser.class));
 
                         } else {
                             // If sign in fails, display a message to the user.

@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <service android:name=".service.TrackingService"/>
+        <service android:name=".activities.tracking.service.TrackingService"/>
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -34,20 +34,19 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name="com.fiqri.ganteng.TrackingActivity"
+            android:name="com.fiqri.ganteng.activities.tracking.TrackingActivity"
             android:label="@string/title_activity_tracking">
 
 
 
         </activity>
-        <activity android:name="com.fiqri.ganteng.activities.Register" />
-        <activity android:name="com.fiqri.ganteng.activities.Login" >
+        <activity android:name="com.fiqri.ganteng.activities.regis.Register" />
+        <activity android:name="com.fiqri.ganteng.activities.login.Login" >
 
 
         </activity>
 
-        <activity android:name="com.fiqri.ganteng.activities.ListUser" />
-        <activity android:name="com.fiqri.ganteng.activities.Splash" >
+        <activity android:name="com.fiqri.ganteng.activities.splash.Splash" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -56,7 +55,7 @@
             </intent-filter>
 
         </activity>
-        <activity android:name="com.fiqri.ganteng.activities.ListUtamaUser">
+        <activity android:name="com.fiqri.ganteng.activities.list.ListUser">
 
         </activity>
     </application>

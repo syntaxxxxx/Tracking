@@ -1,7 +1,6 @@
-package com.fiqri.ganteng.adapter;
+package com.fiqri.ganteng.activities.list.adapter;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -10,7 +9,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.fiqri.ganteng.R;
-import com.fiqri.ganteng.TrackingActivity;
+import com.fiqri.ganteng.activities.tracking.TrackingActivity;
 import com.fiqri.ganteng.model.User;
 
 import java.util.List;
@@ -36,21 +35,7 @@ public class ListUserAdapter extends RecyclerView.Adapter<ListUserAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, final int index) {
-        viewHolder.tvItemUsername.setText(userList.get(index).getName());
-        viewHolder.tvItemEmail.setText(userList.get(index).getEmail());
 
-        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // opsi
-                // Bundle bundle = new Bundle();
-                // bundle.putString("id", userList.get(index).getUuid());
-
-                Intent intent = new Intent(v.getContext(), TrackingActivity.class);
-                intent.putExtra("id", userList.get(index).getUuid());
-                v.getContext().startActivity(intent);
-            }
-        });
     }
 
     @Override
